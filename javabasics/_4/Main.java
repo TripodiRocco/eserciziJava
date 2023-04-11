@@ -2,7 +2,9 @@ package javabasics._4;
 
 public class Main {
     public static void main(String[] args) {
-
+        exercise1();
+        exercise2();
+        exercise3();
     }
 
     /**
@@ -11,7 +13,8 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
-        // Write your code here
+        int myAge = 29;
+        System.out.println("My age is: " + myAge);
     }
 
     /**
@@ -23,19 +26,26 @@ public class Main {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
-        //Write your code here
+        char myFirstNameInitial = 'R';
+        int myAge = 29;
+
+        System.out.println("My Age = "  + myAge + ", my initial = "  + myFirstNameInitial);
     }
 
     /**
      * 3: Write comments above each line of code, describing what the line of code is doing
      */
     private static void exercise3() {
+        // Lo statement 'System.out.println' stampa su una nuova riga il titolo dell'esercizio
         System.out.println("\nExercise 3:");
+        // Viene memorizzata una variabile booleana chiamata 'hasEatenLunch' che ha valore 'false'
         boolean hasEatenLunch = false;
-
+        // Viene memorizzata una variabile decimale chiamata 'lunchCost' che ha valore '5.99'
         double lunchCost = 5.99;
 
+        // Viene stampata su una nuova riga una stringa concatenata al nome della variabile decimale
         System.out.println("Lunch cost=" + lunchCost);
+        // Viene stampata su una nuova riga una stringa concatenata al nome della variabile booleana
         System.out.println("Has Eaten lunch=" + hasEatenLunch);
     }
 }
