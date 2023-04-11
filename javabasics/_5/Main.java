@@ -26,7 +26,9 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
-        // Write your code here
+        int variable = 1;
+        System.out.println(variable);
+        System.out.println(variable + 1 - 1);
     }
 
     /**
@@ -37,7 +39,12 @@ public class Main {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
-        // Write your code here
+        double variable = 2.5;
+        variable *= 2;
+        System.out.println(variable);
+
+        double variable2 = variable / 2;
+        System.out.println(variable2);
     }
 
     /**
@@ -54,7 +61,12 @@ public class Main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-        // Write your code here
+        double celsius = 10.2;
+        var fahrenheit = celsius * 1.8 + 32;
+
+        System.out.println(celsius);
+        System.out.println(fahrenheit);
+
     }
 
     /**
@@ -66,7 +78,14 @@ public class Main {
      */
     private static void exercise4Bonus() {
         System.out.println("\nExercise 4:");
-        // Write your code here
+        int age = 10;
+        age++;  // +1 = 11
+        age++;  // +1 = 12
+        age++;  // +1 = 13
+        age++;  // +1 = 14
+        age++;  // +1 = 15
+
+        System.out.println(age);
     }
 
     /**
@@ -82,7 +101,17 @@ public class Main {
      */
     private static void exercise5Bonus() {
         System.out.println("\nExercise 5:");
-        // Write your code here
+        int age = 50;
+        age-= 50;
+        System.out.println(age);
+
+        System.out.println();
+
+        int secondAge = 50;
+        System.out.println(secondAge - 20);
+        System.out.println(secondAge - 25);
+        System.out.println(secondAge - 50);
+
     }
 
     /**
@@ -92,8 +121,8 @@ public class Main {
     private static void playAroundWithModulus() {
         System.out.println("\nModulus testing!:");
 
-        int value = 5;   // <--- change this value
-        int modulus = 4; // <--- and this value to see the results of modulus
+        int value = 75;   // <--- change this value
+        int modulus = 24; // <--- and this value to see the results of modulus
 
         System.out.println("Modulus calculation, " + value + " % " + modulus +
                 "=" + value % modulus);
