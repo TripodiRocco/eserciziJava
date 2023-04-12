@@ -18,7 +18,13 @@ public class Main {
     private static void exercise1() {
         System.out.println("\nExercise 1:");
         String ourNumberStr = "88";
-        //Write your code here
+
+        int ourNumberAsInt = Integer.valueOf(ourNumberStr);    // Conversione dalla stringa all'intero
+        ourNumberAsInt++;   // aumento di un'unità = 89
+        ourNumberAsInt++;   // aumento di un'altra unità = 90   // potevo fare anche ourNumberStr += 2;
+        String backToString = String.valueOf(ourNumberAsInt);   // Conversione al contrario: dall'intero alla stringa
+        System.out.println(backToString);   // stampa del risultato
+
     }
 
     /**
@@ -30,14 +36,16 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2a:");
         char ourChar = 'a';
-        String ourCharString = " "; // <--- Change this line
+        String ourCharString = String.valueOf(ourChar); // <--- Change this line
         // Notice below what happens, the `charAt()` method
-        System.out.println(ourCharString.charAt(0));
+        System.out.println(ourCharString.toUpperCase().charAt(0));  // il numero 0 indica la posizione della lettera nella stringa (che iniziano la conta da 0)
 
         System.out.println("\nExercise 2b:");
         String anotherString = "Hello world";
-        int charAtIndex = 0; // <--- Change this line
+        int charAtIndex = 6; // <--- Change this line
         System.out.println("Make this print 'w' -> current result: '" + anotherString.charAt(charAtIndex) + "'");
+        // Il metodo charAt indica il numero della posizione della lettera all'interno della stringa
+        // che possiamo modificare cambiando il valore della nostra variabile
     }
 
 
@@ -50,13 +58,13 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        String intStrToConvert = "5.5"; // Change this line
+        String intStrToConvert = "55"; // Change this line
         System.out.println(Integer.valueOf(intStrToConvert));
 
-        String booleanStrToConvert = "maybe"; // And this line
+        String booleanStrToConvert = "false"; // And this line
         System.out.println(Boolean.valueOf(booleanStrToConvert));
 
-        String doubleStrToConvert = "true"; // Also this line
+        String doubleStrToConvert = "2.5"; // Also this line
         System.out.println(Double.valueOf(doubleStrToConvert));
     }
 
@@ -74,7 +82,26 @@ public class Main {
      */
     private static void exercise4() {
         System.out.println("\nExercise 4:");
-        String startStr = "5 ";
-        // Write your code here
+        String startStr = "5";
+
+        startStr = String.valueOf(startStr);    // Mi sono accertato, seguendo la traccia, che 'startStr' fosse di tipo stringa
+        System.out.println(startStr);
+
+        int stringToNumber = Integer.valueOf(startStr);     // Ho convertito la stringa in un intero
+        System.out.println(stringToNumber);
+
+        System.out.println(stringToNumber * 2);     // Ho moltiplicato l'intero (5) per 2 = 10
+
+        String backToString = String.valueOf(stringToNumber * 2);   // Conversione al contrario: da intero a stringa
+        System.out.println(backToString + 10);      // e concatenazione con lo stesso numero + (10) = 1010
+
+        double stringToDouble = Double.valueOf(backToString + 10);  // Conversione dalla stringa precedente al decimale, mantenendo la concatenazione
+        System.out.println(stringToDouble / 3.5);   // Divisione di 1010 per 3.5 = 288.57142857142856
+
+        double removeDecimal = stringToDouble / 3.5;
+        System.out.println(Math.floor(removeDecimal));  // Rimozione della parte decimale dopo aver memorizzato nella variabile 'removeDecimal'
+                                                        // stringToDouble / 3.5
+
+
     }
 }
