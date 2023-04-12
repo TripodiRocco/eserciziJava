@@ -16,7 +16,10 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
-        // Write your code here
+        double value = 23.8;
+        double valueSquareRoot = Math.sqrt(value);
+
+        System.out.println("The square root of value is = " + valueSquareRoot);
     }
 
     /**
@@ -33,10 +36,9 @@ public class Main {
         int valueA = 5;
         int valueB = 10;
 
-        System.out.println("Max=");
-        System.out.println("Min=");
+        System.out.println("Max= " + Math.max(valueA, valueB));
+        System.out.println("Min= " + Math.min(valueA, valueB));
 
-        // Write your code here
     }
 
     /**
@@ -47,8 +49,9 @@ public class Main {
 
         int totalMoney = 50;
         int costPerBurger = 9;
-        // Write your code here
-        System.out.println("Remainder=");
+        int remainingAmountOfMoneyAfterBuyingAsManyBurgersAsPossible = totalMoney % costPerBurger;
+        System.out.println("After buying as many burgers as possible the remainder is = "
+                + remainingAmountOfMoneyAfterBuyingAsManyBurgersAsPossible);
     }
 
     /**
@@ -65,17 +68,17 @@ public class Main {
 
         double ourValue = 4.5;
 
-        // Replace with your comment 1
+        // Ritorna un valore numerico arrotondato per eccesso
         System.out.println(ourValue + " after using ceiling=" + Math.ceil(ourValue));
-        // Replace with your comment 2
+        // Ritorna un valore numerico arrotondato per difetto
         System.out.println(ourValue + " after using floor=" + Math.floor(ourValue));
-        // Replace with your comment 3
+        // Ritorna un valore numerico arrotondato in base alle decisioni prese da Java: se il numero è più vicino al decimale successivo approssima altrimenti arrotonda per difetto
         System.out.println(ourValue + " after using round=" + Math.round(ourValue));
-        // Replace with your comment 4
+        // Ritorna un valore numerico come risultato di una potenza (in questo caso 4.5 alla seconda)
         System.out.println(ourValue + " after using powerOf with the value of 2=" + Math.pow(ourValue, 2));
-        // Replace with your comment 5
+        // Ritorna un valore numerico come risultato di una potenza (in questo caso 4.5 alla terza)
         System.out.println(ourValue + " after using powerOf with the value of 3=" + Math.pow(ourValue, 3));
-        // Replace with your comment 6
+        // Ritorna un valore numerico come risultato di una moltiplicazione per un numero random
         System.out.println(ourValue + " times random =" + Math.random() * ourValue);
     }
 }
