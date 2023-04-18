@@ -8,6 +8,8 @@ public class Main {
         exercise1();
         exercise2();
         exercise3();
+        exercise4();
+        exercise5();
     }
 
     /**
@@ -25,18 +27,34 @@ public class Main {
 
         int sumForA = 0;
 
-        // Write your code for 1a here
+
+        for(Integer item : itemsA){
+            sumForA = sumForA + item;
+            System.out.println(sumForA);
+        }
+        System.out.println("Il totale della somma di tutti gli elementi di Array.asList è = 80");
+
+
         System.out.println("\nExercise 1b:");
         int[] itemsB = new int[]{1, 56, 23};
 
         int sumForB = 0;
 
-        // Write your code for 1b here
+        for(int item : itemsB){
+            sumForB = sumForB + item;
+            System.out.println(sumForB);
+        }
+        System.out.println("Stesso totale = 80");
+
+
         System.out.println("\nExercise 1c:");
 
         int sumForC = 0;
 
-        // Write your code for 1c here, refer back to the lesson to check the fori syntax
+        for(int index = 0; index < itemsA.size(); index++){
+            sumForC += itemsA.get(index);
+        }
+        System.out.println("Stesso totale = " + sumForC);
 
         if (sumForA != sumForB || sumForB != sumForC) {
             System.out.println("Failed, sums are different!");
@@ -50,22 +68,32 @@ public class Main {
      * using a for each loop and an if statement/Math.min
      */
     private static void exercise2() {
+        System.out.println("\nExercise 2:");
         List<Integer> items = Arrays.asList(300, 23, 56, 55, 84);
-        int minNumber = Integer.MAX_VALUE;
+        int minNumber = Integer.MAX_VALUE;  // max valore in memoria di un integer
         int maxNumber = 0;
 
-        // Write code here
+        minNumber = items.get(2);
+        System.out.println(minNumber);
+
+        for(Integer item : items){
+            if(minNumber > item){
+                minNumber = item;
+            }
+        }
+        System.out.println("Il numero minore è = " + minNumber);
     }
 
     /**
-     * 3: Edit the fori loop below so it only prints the first 2 names.
+     * 3: Edit the for i loop below so it only prints the first 2 names.
      */
     private static void exercise3() {
+        System.out.println("\nExercise 3:");
         List<String> names = Arrays.asList("Alan", "Alice", "Antonio", "Aziz");
 
         for (
                 int index = 0;
-                index < names.size(); // <---- Edit this line
+                index < 2;
                 index = index + 1
         ) {
             System.out.println(names.get(index));
@@ -73,7 +101,7 @@ public class Main {
     }
 
     /**
-     * 4: Edit the fori loop below so it prints the 8 multiplication table
+     * 4: Edit the for i loop below so it prints the 8 multiplication table
      * <p>
      * Bonus, how could we use a single variable to change our times table?
      * <p>
@@ -83,10 +111,14 @@ public class Main {
      * </a>
      */
     private static void exercise4() {
+        System.out.println("\nExercise 4:");
+
+        int timeTablesNumber = 4;
+
         for (
-                int timesTableCurrentValue = 5; // <---- Edit this line
-                timesTableCurrentValue <= 50; // <---- Edit this line
-                timesTableCurrentValue = timesTableCurrentValue + 5 // <---- Edit this line
+                int timesTableCurrentValue = 0; // <---- Edit this line
+                timesTableCurrentValue <= timeTablesNumber * 10; // <---- Edit this line
+                timesTableCurrentValue = timesTableCurrentValue + timeTablesNumber // <---- Edit this line
         ) {
             System.out.println(timesTableCurrentValue);
         }
@@ -95,16 +127,21 @@ public class Main {
     /**
      * 5: BONUS! This is an optional task, but it is recommended you complete it
      * -------------------------------------------------------------------------<br/>
-     * Inside of the fori loop below, write another fori loop to complete all
+     * Inside of the for i loop below, write another for i loop to complete all
      * the multiplication tables between 1-10.
      *
      * i.e. 5  = 5,10,15,20,25,30,35,40,45,50
      *
-     * When a loop in inside a loop, we call this a nested loop
+     * When a loop is inside a loop, we call this a nested loop
      */
     private static void exercise5() {
+        System.out.println("\nExercise 5: BONUS");
         for (int timesTableNumber = 1; timesTableNumber <= 10; timesTableNumber++) {
-            // Your fori loop here
+            for(int tabellina = timesTableNumber; tabellina <= timesTableNumber * 10; tabellina += timesTableNumber){
+
+                System.out.println(tabellina);
+            }
+            System.out.println();
         }
     }
 }
