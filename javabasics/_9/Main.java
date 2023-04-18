@@ -14,7 +14,7 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("\nExercise 1:");
-        int porridgeHeatInCentigrade = 30; // <--- Change this value
+        int porridgeHeatInCentigrade = 60; // <--- Change this value
 
         if (porridgeHeatInCentigrade < 60) {
             System.out.println("Too cold!");
@@ -36,9 +36,14 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         double remainingMoney = 15.0;
-        double lunchCost = 5.0;
+        double lunchCost = 20.0;
 
-        // Your if statement here
+        if(lunchCost < remainingMoney){
+            System.out.println("Lunch Time!");
+        } else {
+            System.out.println("You go hungry today");
+        }
+
     }
 
     /**
@@ -56,8 +61,18 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
         double ourDouble = 3.5;
-        //Write your code here
+
+        if(ourDouble > 2.5){
+            System.out.println("Greater than");
+        } else if (ourDouble < 2.5){
+            ourDouble = ourDouble + 1.0;
+            System.out.println("Still less than");
+        } else if (ourDouble + 1.0 > 2.5){
+            System.out.println("Now greater than");
+        }
+
     }
+
 
 
     /**
@@ -76,6 +91,14 @@ public class Main {
 
         int employeeAge = 30;
 
-        //Write your if statement here
+        if(employeeAge < 18){
+            System.out.println("School age");
+        } else if (employeeAge >= 18 && employeeAge < 35) {
+            System.out.println("New Worker");
+        } else if (employeeAge >= 35 && employeeAge < 65) {
+            System.out.println("Experienced Worker");
+        } else {
+            System.out.println("Retired");
+        }
     }
 }
