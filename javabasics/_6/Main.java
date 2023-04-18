@@ -68,17 +68,17 @@ public class Main {
 
         double ourValue = 4.5;
 
-        // Ritorna un valore numerico arrotondato per eccesso
+        // Ceiling -> Porta il numero al numero intero successivo, se ci sono cifre decimali diverse da zero
         System.out.println(ourValue + " after using ceiling=" + Math.ceil(ourValue));
-        // Ritorna un valore numerico arrotondato per difetto
+        // Floor -> Porta il numero al numero intero precedente, se ci sono cifre decimali diverse da zero
         System.out.println(ourValue + " after using floor=" + Math.floor(ourValue));
-        // Ritorna un valore numerico arrotondato in base alle decisioni prese da Java: se il numero è più vicino al decimale successivo approssima altrimenti arrotonda per difetto
+        // Round -> Porta il numero al numero intero successivo se la posizione decimale è 0,5 o superiore, altrimenti lo porta al numero intero precedente
         System.out.println(ourValue + " after using round=" + Math.round(ourValue));
-        // Ritorna un valore numerico come risultato di una potenza (in questo caso 4.5 alla seconda)
+        // Pow (2) -> Eleva il numero al quadrato
         System.out.println(ourValue + " after using powerOf with the value of 2=" + Math.pow(ourValue, 2));
-        // Ritorna un valore numerico come risultato di una potenza (in questo caso 4.5 alla terza)
+        // Pow (3) -> Eleva il numero al cubo
         System.out.println(ourValue + " after using powerOf with the value of 3=" + Math.pow(ourValue, 3));
-        // Ritorna un valore numerico come risultato di una moltiplicazione per un numero random
+        // Random -> Genera un valore casuale compreso tra 0 e 1, quindi lo moltiplica per il nostro numero
         System.out.println(ourValue + " times random =" + Math.random() * ourValue);
     }
 }
