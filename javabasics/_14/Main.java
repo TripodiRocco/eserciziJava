@@ -70,7 +70,7 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         List<Integer> items = Arrays.asList(300, 23, 56, 55, 84);
-        int minNumber = Integer.MAX_VALUE;  // max valore in memoria di un integer
+        int minNumber = Integer.MAX_VALUE;
         int maxNumber = 0;
 
         minNumber = items.get(2);
