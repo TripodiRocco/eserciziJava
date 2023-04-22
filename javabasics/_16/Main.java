@@ -1,10 +1,12 @@
+
 package javabasics._16;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {    // main è la funzione principale del nostro programma
         exercise1();
         exercise2();
         exercise3();
@@ -20,13 +22,23 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
-        // Put this into a function
+
+        // Put it into a function
+        System.out.println(conversione());
+
+
+
+    }
+
+    private static String conversione(){
         double celsius = 30;
         double fahrenheit = ((celsius * 9) / 5) + 32;
-        String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
-        // End
-        System.out.println(conversionDescription);
+
+        String conversionDescription = celsius + " is " + fahrenheit + " fahrenheit";
+
+        return conversionDescription;
     }
+
 
     /**
      * 2: Create a function that processes and prints out all the names in the ArrayList
@@ -41,8 +53,20 @@ public class Main {
         List<String> names = Arrays.asList("Alan   ", "Alice   ", "Ant0ni0   ", "  Aziz");
 
         for (String name : names) {
-            // Call your function
+            System.out.println(formattedNames(name));
         }
+
+    }
+    private static String formattedNames(String name){
+        for (int i = 0; i < name.length(); i++ ){
+            if(Character.isDigit(name.charAt(i))){
+                return "Invalid";
+            }
+
+        }
+
+        return name.toUpperCase().trim();
+
     }
 
     /**
@@ -51,11 +75,19 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
+
+        everyVariablePrinted();
+
+    }
+
+    private static void everyVariablePrinted(){
         double myLunchPrice = 5.99;
         String lunchType = "sandwich";
         String description = "Nice big sandwich";
         int weightInGrams = 500;
 
-        // Call your function
+        System.out.println("Il costo del mio pranzo è di " + myLunchPrice + " dopo aver acquistato un " + lunchType +
+                " (e che " + description + "!), " + "che pesa " + weightInGrams + " grammi");
+
     }
 }
