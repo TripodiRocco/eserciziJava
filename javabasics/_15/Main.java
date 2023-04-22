@@ -22,7 +22,7 @@ public class Main {
         int yearsPast = 0;
         double interestGainedThisYearEuros = 0;
 
-        while (true) {
+        while (currentInvestmentValueEuros <= 15_000 || yearsPast == 5) {
             System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
@@ -57,7 +57,13 @@ public class Main {
         int remainingPoundsToSell = 10_000;
         int maxPoundsToSellPerDay = 1_000;
 
-        // Write your while loop here
+        while(remainingPoundsToSell > 0){
+            daysToSell++;
+        if(poundToEuroExchangeRate < 1.5){
+            remainingPoundsToSell = remainingPoundsToSell - maxPoundsToSellPerDay;
+        }
+
+        }
 
         System.out.println("It took " + daysToSell + " to exit that cursed economy");
     }
@@ -67,18 +73,19 @@ public class Main {
      *    Which would work best? Why?
      *
      * Q Example: Print out the numbers 1 to 10
-     * A Example: fori
+     * A Example: for i
      *
      * Q1: A user inputs their actions into an ATM, they can withdraw, deposit, check balance or exit. What loop should we use?
-     * A1:
+     * A1: do while, perchè facciamo eseguire almeno una volta le operazioni all'utente e alla fine verificheremo se ha fatto ciò che doveva fare
      *
      * Q2: We have a list of 1000 users to send emails to
-     * A2:
+     * A2: for i, perchè abbiamo un numero noto di elementi a cui inviare le mail
      *
      * Q3: We want to print out the first 80 customer names from our bank database
-     * A3:
+     * A3: for each, perchè dobbiamo elaborare meglio i nostri elementi dalla raccolta (in questo caso il database bancario), stampando solo i primi 80 clienti
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4:
+     * A4: while, perchè vogliamo che sia verificata questa condizione all'inizio
      */
+
 }
