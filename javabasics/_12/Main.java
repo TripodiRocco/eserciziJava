@@ -29,9 +29,26 @@ public class Main {
     public static double exercise1(String text, double expectedScore) {
         double yourScore = 0;
 
-        // Start your code here
 
-        // End it here
+
+        yourScore = text.length();
+
+        if (yourScore > 20){
+            yourScore = 20;
+        }
+
+        if (text.contains("a"));{
+            yourScore = yourScore - 5;
+        }
+
+        if (text.equals(text.toLowerCase())){
+            yourScore += 10;
+        }
+
+        if (yourScore > 20){
+            yourScore *= 2;
+        }
+
 
         System.out.print("Expected score=" + expectedScore +", actual score=" + yourScore);
         if (expectedScore != yourScore) {
@@ -54,9 +71,19 @@ public class Main {
      */
     public static double exercise2(String mealType, double weight, double expectedScore) {
         double yourMealScore = 0;
-        // Start your code here
 
-        // End it here
+        if(mealType.contains("sandwich")){
+            yourMealScore = 5 * weight;
+        }
+
+        if (mealType.contains("soup")){
+            yourMealScore = 3 * weight;
+        }
+
+        if(mealType.contains("soup") && yourMealScore < 5){
+            yourMealScore = yourMealScore + 5;
+        }
+
 
         System.out.print("Expected score=" + expectedScore +", actual score=" + yourMealScore);
         if (expectedScore != yourMealScore) {
