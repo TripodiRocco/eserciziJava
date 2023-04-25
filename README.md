@@ -3,7 +3,10 @@
 
 ## LEGENDA:
 
-**<pre>X = DONE AND ALREADY ON GITHUB _ = TO DO              ^ = DONE AND TO UPLOAD ON GITHUB             ! = EXERCISE CORRECT**
+**<pre>X = DONE AND ALREADY ON GITHUB
+_ = TO DO              
+^ = DONE AND TO UPLOAD ON GITHUB             
+! = EXERCISE CORRECT**
 
 
 ### JAVA BASICS:
