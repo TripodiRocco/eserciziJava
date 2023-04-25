@@ -29,15 +29,13 @@ public class Main {
     public static double exercise1(String text, double expectedScore) {
         double yourScore = 0;
 
-
-
         yourScore = text.length();
 
         if (yourScore > 20){
             yourScore = 20;
         }
 
-        if (text.contains("a"));{
+        if (text.indexOf('a') > 0) {
             yourScore = yourScore - 5;
         }
 
@@ -72,16 +70,16 @@ public class Main {
     public static double exercise2(String mealType, double weight, double expectedScore) {
         double yourMealScore = 0;
 
-        if(mealType.contains("sandwich")){
+        if(mealType.equals("sandwich")){
             yourMealScore = 5 * weight;
         }
 
-        if (mealType.contains("soup")){
+        if (mealType.equals("soup")){
             yourMealScore = 3 * weight;
         }
 
-        if(mealType.contains("soup") && yourMealScore < 5){
-            yourMealScore = yourMealScore + 5;
+        if(yourMealScore < 5){
+            yourMealScore = 5;
         }
 
 
