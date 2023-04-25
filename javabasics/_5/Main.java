@@ -26,9 +26,16 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
+        int variable = 2;
+        variable += 1;
+        System.out.println(variable);
+        System.out.println(variable - 1);
+
+        /*
         int variable = 1;
         System.out.println(variable);
         System.out.println(variable + 1 - 1);
+         */
     }
 
     /**
