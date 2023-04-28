@@ -29,13 +29,9 @@ public class Main {
         int variable = 2;
         variable += 1;
         System.out.println(variable);
-        System.out.println(variable - 1);
-
-        /*
-        int variable = 1;
+        variable -= 1;
         System.out.println(variable);
-        System.out.println(variable + 1 - 1);
-         */
+
     }
 
     /**
