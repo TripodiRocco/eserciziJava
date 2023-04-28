@@ -3,8 +3,8 @@ package javaoop.exercises._2;
 
 
 public class Student {
-    String name = "Rocco";
-    int age = 29;
+    String name;
+    int age;
 
 
 
