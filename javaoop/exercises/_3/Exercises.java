@@ -1,5 +1,7 @@
 package javaoop.exercises._3;
 
+
+
 public class Exercises {
     public static void main(String[] args) {
         exercise1();
@@ -19,7 +21,35 @@ public class Exercises {
     private static void exercise1() {
         System.out.println("Exercise 1:");
 
-        // Write and use your 5 getters and setters!
+        // Getters
+        Student studente = new Student("Rocco", "Tripodi", 29, true, 'r');
+        System.out.println("Lo studente è: " + studente.getName() + " " + studente.getSurname() + " e ha " + studente.getAge() + " anni.");
+        System.out.println("É vero che sta studiando Java? " + studente.getJavaStudent() + ".");
+        System.out.println("La sua lettera preferita è: " + studente.getFavouriteLetter() + ".");
+
+        System.out.println();
+
+        // Setters
+        System.out.println("Che ora cambia il suo nome in:");
+        studente.setName("Tom");
+        System.out.println(studente.getName());
+
+        System.out.println("Con il cognome di:");
+        studente.setSurname("Cruise");
+        System.out.println(studente.getSurname());
+
+        System.out.println("Avente età:");
+        studente.setAge(60);
+        System.out.println(studente.getAge());
+
+        System.out.println("Studia Java?");
+        studente.setJavaStudent(false);
+        System.out.println(studente.getJavaStudent());
+
+        System.out.println("E la sua lettera preferita è:");
+        studente.setFavouriteLetter('t');
+        System.out.println(studente.getFavouriteLetter());
+
     }
 
     /**
@@ -35,7 +65,14 @@ public class Exercises {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
 
-        //Write your code here
+        Student studente = new Student("Rocco", "Tripodi", 29, true, 'r');
+
+        studente.setName("R");
+        studente.setAge(-5);
+        studente.setSurname("3podi");
+
+
+
     }
 
 }
