@@ -5,11 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Course {
-    boolean isMyTutorTheBestTeacher = true;
-    char InitialsNameOfTutor = 'm';
-    String courseName = "Java for dummies, like me";
-    int maxStudents = 5;
-    double qualityRatingOutOf10 = 9.5;
+    boolean isMyTutorTheBestTeacher;
+    char InitialsNameOfTutor;
+    String courseName;
+    int maxStudents;
+    double qualityRatingOutOf10;
 
 
     public static void calcoloEtaMedia(){
