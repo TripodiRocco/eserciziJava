@@ -31,7 +31,7 @@ _ = TO DO
 
 ### OOP:
 
-**_**   Esercizio 1     *(Creating our own types -> Classes)*
-**_**   Esercizio 2     *(Constructors)*
-**^**   Esercizio 3     *(Encapsulation)*
-**^**   Esercizio 4     *(Scope, access modifiers, static, final)*
+**!**   Esercizio 1     *(Creating our own types -> Classes)*
+**!**   Esercizio 2     *(Constructors)*
+**X**   Esercizio 3     *(Encapsulation)*
+**X**   Esercizio 4     *(Scope, access modifiers, static, final)*
