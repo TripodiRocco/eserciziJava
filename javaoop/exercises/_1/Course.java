@@ -10,21 +10,7 @@ public class Course {
     String courseName;
     int maxStudents;
     double qualityRatingOutOf10;
-
-
-    public static void calcoloEtaMedia(){
-
-     List<String> students = Arrays.asList("Alice", "Aragon", "Alex");
-     List<Integer> studentAges = Arrays.asList(23, 31, 38);
-
-     double sommaEtaTotale = 0;
-
-
-    for(int i = 0; i < studentAges.size(); i++){
-        sommaEtaTotale = sommaEtaTotale + studentAges.get(i);
-    }
-        double etaMedia = sommaEtaTotale / studentAges.size();
-        System.out.println(Math.round(etaMedia));
-    }
+    List<Student> students = new ArrayList<>();
 
 }
+
