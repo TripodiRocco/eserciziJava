@@ -2,7 +2,7 @@
 
 
 ## LEGENDA:
-
+[README.md](README.md)
 **<pre>X = DONE AND ALREADY ON GITHUB
 _ = TO DO              
 ^ = DONE AND TO UPLOAD ON GITHUB             
