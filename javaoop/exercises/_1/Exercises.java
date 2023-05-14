@@ -1,5 +1,6 @@
 package javaoop.exercises._1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -38,10 +39,6 @@ public class Exercises {
             System.out.println(studentAges.get(index));
         }
 
-
-
-
-
     }
 
     private static Student createNewStudent(String name, Integer age) {
@@ -69,7 +66,19 @@ public class Exercises {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        Course.calcoloEtaMedia();
+        List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
+        List<Integer> studentAges = Arrays.asList(23, 31, 38);
+        List<Course> students = new ArrayList<Course>();
 
+        int sum = 0;
+
+        for (int age : studentAges) {
+            sum += age;
+        }
+        double average = sum / studentAges.size();
+        System.out.println("the average age of the students is "+ average);
     }
+
 }
+
+
